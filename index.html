@@ -32,6 +32,8 @@
       href="assets/images/icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114"
       href="assets/images/icon-114x114.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'>
 
   </head>
   <body>
@@ -334,6 +336,43 @@
         </div><!-- container end -->
       </section>
       <!-- Checkout Section End -->
+
+      <!--===== CONTACT ME =====-->
+      <section class="contact section contact-section bd-container" id="contact"
+        style="display: none;">
+        <span class="section-subtitle"></span>
+        <h2 class="section-title">Facing problems, please try again or contact
+          us at:</h2>
+
+        <div class="contact__container bd-grid">
+          <div class="contact__content bd-grid">
+            <div class="contact__box">
+              <i class="bx bx-phone contact__icon"></i>
+              <h3 class="contact__title">Phone</h3>
+              <span class="contact__description">+91-7827575143 (Alok
+                Kumar)</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-phone contact__icon"></i>
+              <h3 class="contact__title">Phone</h3>
+              <span class="contact__description">+91-7701833972 (Anish)</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-envelope contact__icon"></i>
+              <h3 class="contact__title">Gmail</h3>
+              <span class="contact__description">alok@aajneeti.social</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-envelope contact__icon"></i>
+              <h3 class="contact__title">Gmail</h3>
+              <span class="contact__description">anish@aajneeti.social</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Optional JavaScript -->
@@ -348,14 +387,17 @@
   const donationInput = document.getElementById("custom-donation");
   const billForm = document.getElementById("bill-form");
   const billbutton = document.getElementById("billButton");
+  const contacts=document.getElementById("contact");
 
   donationInput.addEventListener("input", () => {
     if (donationInput.value.trim() !== "") {
       billForm.style.display = "block"; // show form
       billbutton.style.display = "block";
+      contacts.style.display = "block";
     } else {
       billForm.style.display = "none"; // hide form
       billbutton.style.display = "none";
+      contacts.style.display = "none";
     }
   });
 </script>
