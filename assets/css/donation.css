@@ -121,6 +121,8 @@
 .ugf-wraper .donetion1-content{
 	/* overflow-y: scroll; */
   max-height: 100vh;
+ 
+
 }
 /* .ugf-wraper .donetion1-content::-webkit-scrollbar{
   display: none;
@@ -128,7 +130,7 @@
 .ugf-wraper .content-block {
   background: url(../images/bg/payments.png) no-repeat ;
   background-size: cover;
-  padding: 50px;
+  /* padding: 50px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +263,7 @@
   max-width: 520px;
   /* min-height: 100vh; */
   padding: 90px 0;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   
 }
 @media(max-width: 768px){
@@ -1280,16 +1282,39 @@ margin:50px;
 .contact__box:hover .contact__icon {
   color: #fff;
 }
-.content-area {
+.main-section{
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #fff, #e2d5fc, #e9e3f5 , #f8f9fa);
+  background: linear-gradient(-45deg, #fff, #eeedf1, #f8f5fd , #f8f9fa);
   background-size: 400% 400%;
   animation: gradientBG 12s ease infinite;
+  position: relative;
+  overflow: hidden;
 }
 
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+.btn-red {
+  background-color: #d0021b;
+  color: #fff;
+  font-size: 14px;
+}
+.btn-outline-red {
+  background-color: #fff;
+  color: #d0021b;
+  border: 1px solid #d0021b;
+  font-size: 14px;
+  padding: 4px 6px;
+}
+.btn-next {
+  background: #d0021b;
+  color: #fff;
+  padding: 6px 10px;
+  margin-top: 15px;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
 }
