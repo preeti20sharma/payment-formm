@@ -999,6 +999,9 @@ span.error{
     font-size: 1.5rem;
     font-weight: 400;
 }
+.checkout-section{
+  background-color: #fff;
+}
     .checkout-section .card-body input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #b2becc;
