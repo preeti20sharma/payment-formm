@@ -1347,7 +1347,7 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
 .donation-input {
   display: flex;
   align-items: center;
-  border: 2px solid #111827
+  border: 2px solid rgb(145, 2, 2);
 ; /* red border */
   border-radius: 8px;
   overflow: hidden;
@@ -1356,7 +1356,7 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
 }
 
 .donation-input .currency {
-  background: #111827;
+  background: rgb(145, 2, 2);
   color: #fff;
   padding: 10px 14px;
   font-size: 18px;
@@ -1375,4 +1375,10 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
 .donation-input input::placeholder {
   color: #999;
 }
+.bg-background{
+background: #333333;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #880303, #131212);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #990606, #131212); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+      
+}
