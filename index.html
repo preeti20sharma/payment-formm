@@ -54,23 +54,39 @@
         <header class="bg-white sticky top-0 z-50">
           <nav
             class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <div>
-              <a href="https://aajneeti.social">
-                <img src="assets/images/bg/acl-logo.png" alt='logo' width="100">
-              </a>
+            <div class="d-flex gap-2 gap-md-4 align-items-center">
+              <div class="mt-4">
+                <a href="https://aajneeti.social">
+                  <img src="assets/images/bg/HdfcLogo.svg" alt="logo"
+                    width="100">
+                </a>
+              </div>
+
+              <div class="vl"></div>
+
+              <div>
+                <a href="https://aajneeti.social">
+                  <img src="assets/images/bg/acl-logo.png" alt="logo"
+                    width="100">
+                </a>
+              </div>
             </div>
+
             <div class=" md:flex space-x-6 items-center links">
               <a href="https://aajneeti.social"
                 class="hidden md:inline hover:text-red-800 text-slate-800 cursor-pointer">Home</a>
               <a href="#"
                 class=" hidden md:inline hover:text-red-800 text-slate-800 cursor-pointer ">Payment</a>
-
-              <button
-                class="bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded-lg">Contact
-                Us
-              </button>
-              <button
-                class="btn btn-outline-red  ">91-7827575143</button>
+              <a href="tel:91-7827575143">
+                <button
+                  class="bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded-lg">Contact
+                  Us
+                </button>
+              </a>
+              <a href="tel:91-7827575143" class="hidden sm:inline">
+                <button
+                  class="btn btn-outline-red  ">91-7827575143</button>
+              </a>
             </div>
           </nav>
         </header>
@@ -104,7 +120,8 @@
             </div>
             <div
               class="md:w-1/2 mb-10 text-center ml-10 mt-4 md:mt-0 align-center md:mb-0">
-              <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6"
+              <h1
+                class="text-4xl mt-4 sm:mt-0 md:text-6xl font-bold text-gray-900 mb-6"
                 data-aos="fade-out"
                 data-aos-duration="800">Make
                 Payment
@@ -118,7 +135,7 @@
                 data-aos-easing="ease-in-out">
                 Type amount here ( ₹ )
               </label>
-              <div class="donation-input mx-auto">
+              <div class="donation-input mt-4 mx-auto">
                 <span class="currency">₹</span>
                 <input type="text" id="custom-donation" placeholder="0.00"
                   required />
@@ -131,14 +148,14 @@
                   &nbsp; &#10140;
                 </button>
               </a>
-              <a href="mailto:anish@aajneeti.social">
+              <!-- <a href="mailto:anish@aajneeti.social">
                 <button
                   class="bg-red-800 text-center mt-10 mx-auto hover:bg-gray-800 text-white px-8 py-3 rounded-full flex items-center group">
                   Book a Consultation
                   <i
                     class="fa-regular fa-envelope ml-3 group-hover:translate-x-1 transition-transform"></i>
                 </button>
-              </a>
+              </a> -->
             </div>
           </div>
         </section>
@@ -200,7 +217,7 @@
                           placeholder="City" name="city" required>
                       </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                       <div class="col-md-6 mb-3">
                         <label class="form-label">State</label>
                         <input type="text" class="form-control"
@@ -211,7 +228,7 @@
                         <input type="text" class="form-control"
                           placeholder="PIN" name="pin" required>
                       </div>
-                    </div>
+                    </div> -->
 
                   </div>
                 </div>
@@ -222,26 +239,24 @@
                 <div class="payment-card shadow-lg p-4 w-100">
                   <!-- Payment Option 1: Pay with UPI QR Code -->
                   <div class="form-check pb-3">
-                    <input class="form-check-input" type="radio"
-                      name="paymentMethod" id="upiQrCode" value="upi" checked>
+                    <input class="form-check-input" type="checkbox"
+                      id="upiQrCode" value="upi" checked>
                     <label
                       class="form-check-label d-flex text-dark align-items-center"
                       for="upiQrCode">
-                      Pay with UPI QR Code
-                      <div class="paytm-logo">Pay<span>tm</span></div>
+                      Secure Transaction
                     </label>
+                    <div>
+                      <img src="assets/images/bg/credit-cards.webp"
+                        alt="transaction"
+                        style="width: 400px; height: auto;" />
+                    </div>
                   </div>
-
-                  <div class="upi-info-box">
-                    It uses UPI apps like BHIM, Paytm, Google Pay, PhonePe or
-                    any Banking UPI app to make payment.
-                  </div>
-
                   <hr class="my-3">
                   <!-- Payment Option 2: Smart Gateway -->
                   <div class="form-check pt-3 pb-4">
-                    <input class="form-check-input" type="radio"
-                      name="paymentMethod" id="smartGateway" value="gateway">
+                    <input class="form-check-input" type="checkbox"
+                      id="smartGateway" value="gateway" checked>
                     <label
                       class="form-check-label text-dark d-flex align-items-center"
                       for="smartGateway">
