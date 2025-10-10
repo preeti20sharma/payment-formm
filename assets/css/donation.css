@@ -1332,7 +1332,7 @@ margin:50px;
     ),
     url('assets/images/bg/backimg.jpg') no-repeat center center;
   background-size: cover;
-  color: #333; /* Dark text on light overlay */
+  color: #333; 
 }
 .btn-outline-red:hover {
   color:rgb(19, 19, 19);
@@ -1381,10 +1381,8 @@ background: -webkit-linear-gradient(to right, #880303, #131212);  /* Chrome 10-2
 background: linear-gradient(to right, #880303, #131212); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 .vl {
-  border-left: 0.8px solid rgb(235, 231, 231); /* line color */
-  height: 60px;               /* adjust based on logo size */
-  margin: 0 2px;              /* space between logos and line */
+  border-left: 0.8px solid rgb(235, 231, 231); 
+  height: 60px;               
+  margin: 0 2px;              
 }
-input[type="checkbox"] {
-  accent-color: green;  /* change to your color */
-}
+
